@@ -21,11 +21,13 @@ class MeasurementHelper: NSObject {
   static func sendLoginEvent()
   {
      Analytics.logEvent(AnalyticsEventLogin, parameters: nil)
+    print("login user")
   }
 
   static func sendLogoutEvent()
   {
      Analytics.logEvent("logout", parameters: nil)
+     print("logout user")
   }
 
   static func sendMessageEvent()
